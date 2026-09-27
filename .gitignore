@@ -1,0 +1,14 @@
+# Local operating-system files
+.DS_Store
+Thumbs.db
+
+# Local secrets and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Local research material requiring review before publication
+private/
+scratch/
