@@ -10,24 +10,25 @@ People remain free to trade, own businesses, earn, create and work for fulfilmen
 
 ## Where we are
 
-**A bounded working prototype.** This repository contains a local community-solar workbench, an evidence register, source-reported annual benchmarks, and a deterministic annual screening model with a browser interface, CLI and JSON API. It is an early research tool, not a validated New Zealand energy model or an operational guarantee of essential provision. AI and simulation do not establish that the proposed transition is economically or physically feasible; evidence and practical results must do that.
+**A local study workspace.** This repository contains a persistent local study workspace with evidence and scenario forms, source-reported annual benchmarks, and a deterministic annual screening model with a browser interface, CLI, JSON API and optional MCP bridge. It is an early research tool, not a validated New Zealand energy model or an operational guarantee of essential provision. AI and simulation do not establish that the proposed transition is economically or physically feasible; evidence and practical results must do that.
 
 The ambition is national benefit, with useful replication elsewhere. The work begins with bounded questions that people can test and act on.
 
 ## Run the prototype
 
-Requires Node.js 20.11 or newer. There are no package dependencies, API keys or paid inference calls.
+Use a supported Node.js release, preferably Node 22 or 24. The optional MCP bridge uses the official SDK; no API key or paid inference is needed.
 
 ```sh
+npm ci --ignore-scripts
 npm test
 npm start
 ```
 
-Open [the local workbench](http://127.0.0.1:4317). Inspect the source records, run the no-solar example, choose a smaller or larger illustrative project, then compare and export the results. Use **Copy & adapt** to change a local assumption. Data lives in browser memory until exported; reloading clears the session.
+Open [the local workbench](http://127.0.0.1:4317). Create a blank study or explicitly copy the example. Add evidence using ordinary forms, create and edit scenarios, run alternatives, compare results and save. Saved studies survive reloads and restarts; unsaved changes remain clearly marked. Export a portable bundle or adapt a saved study to another place with its source history retained.
 
 The example costs, generation assumptions and benefit shares are invented and visibly labelled. Reported Ōtaki totals are a separate arithmetic reconstruction, with uncertainty retained; they do not calibrate those examples. Annual operating value includes avoided bills, which are not necessarily cash available for distribution. Capital and unknown lifecycle impacts remain separate.
 
-See the [prototype guide](docs/prototype.md) for equations, schemas, reproducible CLI commands and API operations. A compatible AI tool can use these local operations; an autonomous research agent and WebMCP adapter are future work.
+Follow the [study workflow and recovery guide](docs/study-workspace.md), the [model guide](docs/prototype.md) and [MCP setup](docs/mcp.md). Compatible AI assistants can use the same local study operations; an autonomous research agent and WebMCP adapter remain future work.
 
 ## How the wider initiative should work
 
@@ -52,6 +53,8 @@ Read the [community-solar study brief](studies/community-solar/README.md) for th
 
 | Document | Purpose |
 | --- | --- |
+| [Study workspace](docs/study-workspace.md) | Create, save, reopen, adapt and back up work using normal forms |
+| [MCP bridge](docs/mcp.md) | Optional standard stdio connection for a compatible AI assistant |
 | [Prototype guide](docs/prototype.md) | Run, reproduce, inspect and understand the limits of the working software |
 | [Ōtaki evidence and gaps](studies/community-solar/evidence.md) | Source-reported results, forecasts, discrepancies and unavailable inputs |
 | [Prospective pilot](docs/pilot-plan.md) | A bounded paid research offer, acceptance criteria and unconfirmed funding routes |

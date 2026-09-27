@@ -20,7 +20,7 @@ Separate measured observations, source-reported information, estimates, interpre
 
 Mark new claims and models as proposed. Review should record what was checked, by whom or in what role, which version was assessed, conflicts of interest and unresolved disagreement. Maintainer acceptance is not certification of engineering, clinical, financial or policy fitness.
 
-For software changes, use Node.js 20.11 or newer, run `npm test`, and follow the [prototype guide](docs/prototype.md). Check changed browser workflows locally.
+For software changes, use a supported Node.js release (22 or 24 recommended), install with `npm ci --ignore-scripts`, run `npm test`, and follow the [prototype guide](docs/prototype.md). Check changed browser workflows locally.
 
 For model changes, explain what changed and why; preserve input/output versions and update validation or sensitivity work where needed. Practical pilots require relevant expert and community review, explicit authority and a measurement plan.
 

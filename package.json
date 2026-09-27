@@ -1,6 +1,6 @@
 {
   "name": "commonweal",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "type": "module",
   "description": "Local evidence and scenario workbench for public-interest community research",
@@ -10,7 +10,16 @@
   "scripts": {
     "start": "node src/server.mjs",
     "test": "node --test",
-    "cli": "node src/cli.mjs"
+    "cli": "node src/cli.mjs",
+    "mcp": "node src/mcp.mjs",
+    "test:mcp": "node --test test/mcp.test.mjs"
   },
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@modelcontextprotocol/server": "2.1.0",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/client": "2.1.0"
+  }
 }

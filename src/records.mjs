@@ -132,6 +132,20 @@ export const operations={
     {name:'compare_runs',http:'POST /api/compare',cli:'compare BASELINE_RUN.json ALTERNATIVE_RUN.json',input:'{runs: [Run, Run]}',description:'Verify runs by recomputing and return alternative-minus-baseline differences.'},
     {name:'verify_run',http:'POST /api/verify',cli:'verify RUN.json',input:'{run: Run}',description:'Check provenance and recomputation against this installed model version.'}
   ],
+  study_operations:[
+    {name:'list_studies',http:'GET /api/studies',cli:'studies',writes:false},
+    {name:'read_study',http:'GET /api/studies/:id',cli:'study STUDY_ID',writes:false},
+    {name:'create_study',http:'POST /api/studies',cli:'study-create REQUEST.json',writes:true},
+    {name:'save_study',http:'PUT /api/studies/:id',cli:'study-save REQUEST.json',writes:true},
+    {name:'adapt_study',http:'POST /api/studies/:id/adapt',cli:'study-adapt STUDY_ID REQUEST.json',writes:true},
+    {name:'replace_study_evidence',http:'PUT /api/studies/:id/evidence',cli:'study-evidence STUDY_ID REQUEST.json',writes:true},
+    {name:'put_study_scenario',http:'PUT /api/studies/:id/scenario',cli:'study-scenario STUDY_ID REQUEST.json',writes:true},
+    {name:'run_study_scenario',http:'POST /api/studies/:id/run',cli:'study-run STUDY_ID SCENARIO_ID EXPECTED_REVISION',writes:true},
+    {name:'compare_study_runs',http:'POST /api/studies/:id/compare',cli:'study-compare STUDY_ID BASELINE_RUN_ID ALTERNATIVE_RUN_ID',writes:false},
+    {name:'export_study',http:'GET /api/studies/:id/export',cli:'study-export STUDY_ID',writes:false},
+    {name:'import_study',http:'POST /api/studies/import',cli:'study-import BUNDLE.json',writes:true}
+  ],
+  storage_note:'Explicit study writes save local immutable revisions. Reads do not fetch sources. Imports always create a new study; no hosted/shared storage or authentication is implemented.',
   participation:'Human UI, CLI and API use the same computation. No AI subscription, API key or paid inference is needed to operate this prototype.',
   ai_boundary:'People may connect compatible external AI tools themselves; no WebMCP adapter or autonomous research agent is implemented.',
   evidence_note:'Schema validation is not fact checking. Review labels are contributor claims requiring their own documented review.'

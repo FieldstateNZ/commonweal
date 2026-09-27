@@ -16,3 +16,6 @@ scratch/
 # Local runtime artifacts
 node_modules/
 *.log
+
+# Local studies, immutable revisions and recovery material
+.commonweal/

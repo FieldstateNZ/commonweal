@@ -22,15 +22,15 @@ Use public material to reconstruct a bounded reference such as Power Up Ōtaki. 
 
 Use AI to help implement and check appropriate calculations. Compare no project, a smaller design and a larger design where evidence supports those alternatives. Include costs, physical constraints, distribution, lifecycle impacts and uncertainty.
 
-**Current:** the [local annual-screening prototype](docs/prototype.md) compares invented demonstration scenarios, retains exact inputs and evidence in reproducible runs, and exposes hypothetical benefit sharing and unknown environmental inputs. Automated calculation checks are not expert validation or measured project performance.
+**Current:** the [local annual-screening prototype](docs/prototype.md) compares invented demonstration scenarios, retains exact inputs and evidence in reproducible runs, and exposes hypothetical benefit sharing and unknown environmental inputs. A local study workspace now supports normal evidence/scenario forms, persistent revisions, portable bundles, source-linked adaptation and an optional standard MCP bridge. Automated calculation checks are not expert validation or measured project performance.
 
 **Output:** model documentation, versioned inputs, repeatable runs and a plain-language account of trade-offs.
 
 **Progress when:** someone else can reproduce the calculations, a relevant reviewer has assessed their suitability, and remaining limits are visible. This does not yet establish investment feasibility.
 
-## 3. Adapt the case to another community
+## 3. Adapt the case to another community — software support available
 
-Work with a willing community and its legitimate decision-makers to replace reference assumptions with local data. Include people who do not own property or buy AI subscriptions.
+The local workspace can copy a saved study with parent provenance and flag every inherited input for local review. No real second-community adaptation is claimed. Work with a willing community and its legitimate decision-makers to replace reference assumptions with local data. Include people who do not own property or buy AI subscriptions.
 
 **Output:** a linked adaptation, differences from the reference, unresolved delivery requirements and participant feedback.
 

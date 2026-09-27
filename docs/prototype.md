@@ -6,33 +6,19 @@ The reported Ōtaki figures and the illustrative solar scenarios are separate. P
 
 ## Run locally
 
-Use **Node.js 20.11 or later** and its bundled npm. There are no runtime or development package dependencies, so no package installation is required. From the repository root:
+Use a supported Node.js release, preferably Node 22 or 24. The calculation engine and HTTP server use Node built-ins; the optional MCP bridge uses the official SDK. Install the locked dependencies for the complete test suite and MCP bridge:
 
 ```sh
-node --version
+npm ci --ignore-scripts
 npm test
 npm start
 ```
 
-Open <http://127.0.0.1:4317>. Stop the server with Ctrl-C. To choose another port:
+Open <http://127.0.0.1:4317>. Stop with Ctrl-C; `PORT=4318 npm start` chooses another port. The server binds to loopback and checks local Host/Origin headers. It is not a hosted multi-user service.
 
-```sh
-PORT=4318 npm start
-```
+The [study workspace guide](study-workspace.md) covers ordinary creation/editing forms, local saves, reopening, adaptation, bundles and recovery. Saved studies persist; unsaved editor changes remain in the browser. Each completed run retains its own scenario and evidence even if current drafts change. The older `commonweal.session.v1` files from the first prototype are inspection records, not a complete study restore format; use portable study bundles for that workflow.
 
-The server binds to `127.0.0.1`. It accepts `localhost` or `127.0.0.1` Host headers and rejects browser origins other than its own. This is a local workbench, without shared accounts or a production hosting configuration.
-
-In the web interface:
-
-1. Inspect evidence, reported annual totals, source links and quality notes.
-2. Select an illustrative scenario, or import one from JSON. Use adaptation and the input fields to change assumptions.
-3. Import an evidence array when needed. Import replaces the working evidence set; it does not change evidence retained in earlier runs.
-4. Run the scenario, then change an assumption and run again. Compare two saved runs in the current page session.
-5. Export the scenario, evidence, complete run, comparison or session JSON before leaving the page.
-
-Editing a numerical input in the interface changes its basis to `illustrative_assumption` and clears its earlier evidence links; blank environmental inputs become `unknown`. To supply a supported or derived input with evidence references, edit the scenario JSON and import it. Scenario import loads an editor; complete validation happens when the scenario runs.
-
-“Saved” runs live in page memory. There is no database, server-side save, browser storage or automatic session recovery. Reloading the page discards unsaved work. Session export is a portable record, not an implemented full-session restore operation. Downloads and the visible export panel provide copies of the JSON.
+Editing a numeric input in the interface makes it an illustrative assumption until its basis and evidence association are explicitly reviewed. Environmental blanks remain unknown. Neither a successful form save nor an attached reference establishes local model validation.
 
 ## Structured CLI workflow
 
@@ -101,9 +87,9 @@ console.log(JSON.stringify(result, null, 2));
 JS
 ```
 
-POST requests require `Content-Type: application/json` and are limited to **1 MiB**. Each CLI input file is also limited to 1 MiB; the browser file picker uses a slightly smaller 1,000,000-byte limit. Validation rejects JSON nesting beyond 40 levels and unsupported prototype-related keys. Evidence sets contain at most 200 records. These bounds keep the local prototype small; they are not a service availability guarantee.
+The standalone calculation POST requests above require `Content-Type: application/json` and are limited to **1 MiB**. Standalone CLI calculation input files are also limited to 1 MiB; the browser evidence/scenario file pickers use a slightly smaller 1,000,000-byte limit. Study operations have separate limits: an 8 MiB canonical bundle, 64 KiB additional HTTP request overhead and a 9 MiB browser study-file picker. See the [workspace guide](study-workspace.md) for study limits and recovery. Validation rejects JSON nesting beyond 40 levels and unsupported prototype-related keys. Evidence sets contain at most 200 records. These bounds keep the local prototype small; they are not a service availability guarantee.
 
-Operations neither fetch evidence URLs nor persist contributions. Evidence validation checks structure, dates, units/context fields, declared rights and references; it does not establish truth, permissions or independent review. There is no AI API integration, autonomous research agent, hosted inference, API key requirement or WebMCP adapter. A future browser adapter can build on this boundary without making experimental browser support mandatory.
+The standalone calculation operations above do not fetch evidence URLs or persist contributions. Explicit study operations described in the [workspace guide](study-workspace.md) do save local revisions. Evidence validation checks structure, dates, units/context fields, declared rights and references; it does not establish truth, permissions or independent review. The optional [standard MCP stdio bridge](mcp.md) exposes local study operations. There is no AI inference API integration, autonomous research agent, hosted inference, API key requirement or WebMCP adapter. A future browser adapter can build on this boundary without making experimental browser support mandatory.
 
 ## Records and repeatability
 
@@ -115,7 +101,9 @@ Operations neither fetch evidence URLs nor persist contributions. Evidence valid
 | Comparison | `commonweal.comparison.v1` |
 | Reported benchmarks | `commonweal.benchmarks.v1` |
 | Operation descriptions | `commonweal.operations.v1` |
-| UI session export | `commonweal.session.v1` |
+| Study | `commonweal.study.v1` |
+| Study bundle | `commonweal.study-bundle.v1` |
+| Working recovery export (unvalidated) | `commonweal.recovery.v1` |
 | Model identity | `annual-solar-screen` |
 | Model version | `commonweal.annual-solar.v1` |
 

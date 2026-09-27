@@ -1,6 +1,6 @@
 # Design brief
 
-Status: wider design with an initial local prototype, 28 September 2026. The [prototype guide](prototype.md) describes the implemented annual model, evidence import, saved run records, comparison, CLI and API. Durable shared storage, review workflows, optimisation and pilot delivery remain proposed.
+Status: wider design with an initial local prototype, 28 September 2026. The [prototype guide](prototype.md) describes the implemented annual model, evidence import, saved run records, comparison, CLI and API. The local workspace now includes durable studies, ordinary item editing, portable bundles, explicit adaptation lineage and an optional MCP bridge. Shared multi-user storage, review workflows, optimisation and pilot delivery remain proposed.
 
 ## The shared loop
 
@@ -39,7 +39,7 @@ An ordinary interface and structured engine actions should reach the same record
 | Compare scenarios | Visible differences in inputs, outcomes, uncertainty and coverage |
 | Contribute outcomes | Observations linked to a pilot and its original expectations |
 
-Keep these operations independently usable through APIs and appropriate connectors. The prototype implements a subset: evidence format checking, scenario editing, deterministic runs, comparison and export. Its [operation manifest](../src/records.mjs) describes available local endpoints. Shared permissions, a durable revision graph, resource metering and outcome contributions remain proposed.
+Keep these operations independently usable through APIs and appropriate connectors. The prototype implements a subset: evidence format checking, scenario editing, deterministic runs, comparison and export. Its [operation manifest](../src/records.mjs) describes available local endpoints. Local revision files and adaptation source snapshots are now implemented. Shared permissions, a collaborative revision graph, resource metering and outcome contributions remain proposed.
 
 WebMCP is a possible browser adapter. Its [draft specification](https://webmachinelearning.github.io/webmcp/) and [Chrome documentation](https://developer.chrome.com/docs/ai/webmcp) describe tools exposed by web applications to compatible agents; support is evolving. It is not inference, free compute or a guarantee that every AI subscription can connect. Engine operations must remain useful without this adapter.
 
