@@ -2,31 +2,35 @@
 
 These are proposed stages, not delivery dates, funded commitments or claims of readiness. AI-assisted research, design and implementation runs through every stage, with recorded human review.
 
-## 0. Establish an open foundation — current stage
+## 0. Establish an open foundation — initial documents published
 
 Publish the mission, contribution standards, reusable templates and the first study brief.
 
-**Complete when:** readers can distinguish the goal from today's implementation, contribute a sourced correction and identify the next unanswered question. The initial repository provides these documents; no application is claimed.
+**Complete when:** readers can distinguish the goal from today's implementation, contribute a sourced correction and identify the next unanswered question. The repository provides these documents. A first bounded software prototype now supports parts of stages 1 and 2.
 
-## 1. Reconstruct one documented community-energy case
+## 1. Reconstruct one documented community-energy case — in progress
 
 Use public material to reconstruct a bounded reference such as Power Up Ōtaki. Record source dates and rights, reported facts, unknown inputs and discrepancies. Define the baseline, system boundary, beneficiary groups and outcomes.
+
+**Current:** nine sourced records and three period-total benchmarks, including conflicts and meter-quality caveats. See the [evidence account](studies/community-solar/evidence.md). No independent meter/account audit or full cash-flow reconstruction is complete.
 
 **Output:** a reviewed evidence register and case record, with an explicit list of unavailable data.
 
 **Progress when:** the public account is traceable and reviewers can see what is established and what is inferred. Continue research if missing inputs prevent a useful comparison; do not invent them.
 
-## 2. Build a small reproducible comparison
+## 2. Build a small reproducible comparison — prototype available
 
 Use AI to help implement and check appropriate calculations. Compare no project, a smaller design and a larger design where evidence supports those alternatives. Include costs, physical constraints, distribution, lifecycle impacts and uncertainty.
+
+**Current:** the [local annual-screening prototype](docs/prototype.md) compares invented demonstration scenarios, retains exact inputs and evidence in reproducible runs, and exposes hypothetical benefit sharing and unknown environmental inputs. A local study workspace now supports normal evidence/scenario forms, persistent revisions, portable bundles, source-linked adaptation and an optional standard MCP bridge. Automated calculation checks are not expert validation or measured project performance.
 
 **Output:** model documentation, versioned inputs, repeatable runs and a plain-language account of trade-offs.
 
 **Progress when:** someone else can reproduce the calculations, a relevant reviewer has assessed their suitability, and remaining limits are visible. This does not yet establish investment feasibility.
 
-## 3. Adapt the case to another community
+## 3. Adapt the case to another community — software support available
 
-Work with a willing community and its legitimate decision-makers to replace reference assumptions with local data. Include people who do not own property or buy AI subscriptions.
+The local workspace can copy a saved study with parent provenance and flag every inherited input for local review. No real second-community adaptation is claimed. Work with a willing community and its legitimate decision-makers to replace reference assumptions with local data. Include people who do not own property or buy AI subscriptions.
 
 **Output:** a linked adaptation, differences from the reference, unresolved delivery requirements and participant feedback.
 

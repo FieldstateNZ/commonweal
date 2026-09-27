@@ -10,11 +10,27 @@ People remain free to trade, own businesses, earn, create and work for fulfilmen
 
 ## Where we are
 
-**Early-stage research and design.** This repository currently contains the mission, design brief, roadmap and contribution templates. There is no running engine, validated New Zealand model or operational guarantee of essential provision here yet. AI and simulation do not establish that the proposed transition is economically or physically feasible; evidence and practical results must do that.
+**A local study workspace.** This repository contains a persistent local study workspace with evidence and scenario forms, source-reported annual benchmarks, and a deterministic annual screening model with a browser interface, CLI, JSON API and optional MCP bridge. It is an early research tool, not a validated New Zealand energy model or an operational guarantee of essential provision. AI and simulation do not establish that the proposed transition is economically or physically feasible; evidence and practical results must do that.
 
 The ambition is national benefit, with useful replication elsewhere. The work begins with bounded questions that people can test and act on.
 
-## How it should work
+## Run the prototype
+
+Use a supported Node.js release, preferably Node 22 or 24. The optional MCP bridge uses the official SDK; no API key or paid inference is needed.
+
+```sh
+npm ci --ignore-scripts
+npm test
+npm start
+```
+
+Open [the local workbench](http://127.0.0.1:4317). Create a blank study or explicitly copy the example. Add evidence using ordinary forms, create and edit scenarios, run alternatives, compare results and save. Saved studies survive reloads and restarts; unsaved changes remain clearly marked. Export a portable bundle or adapt a saved study to another place with its source history retained.
+
+The example costs, generation assumptions and benefit shares are invented and visibly labelled. Reported Ōtaki totals are a separate arithmetic reconstruction, with uncertainty retained; they do not calibrate those examples. Annual operating value includes avoided bills, which are not necessarily cash available for distribution. Capital and unknown lifecycle impacts remain separate.
+
+Follow the [study workflow and recovery guide](docs/study-workspace.md), the [model guide](docs/prototype.md) and [MCP setup](docs/mcp.md). Compatible AI assistants can use the same local study operations; an autonomous research agent and WebMCP adapter remain future work.
+
+## How the wider initiative should work
 
 1. People and their compatible AI tools research a question and contribute sourced findings.
 2. A durable shared engine retains evidence, uncertainty, assumptions and revision history.
@@ -27,9 +43,9 @@ AI-produced claims enter as contributions to check, not automatically verified e
 
 ## Start with one useful study
 
-The suggested first study is a public reconstruction of documented community solar, using [Energise Ōtaki's Power Up Ōtaki](https://www.energiseotaki.nz/power-up-otaki) as a reference, followed by AI-assisted adaptation for another community.
+The first study begins a public reconstruction of documented community solar, using [Energise Ōtaki's Power Up Ōtaki](https://www.energiseotaki.nz/power-up-otaki) as a reference, followed by AI-assisted adaptation for another community.
 
-The reference project supplies local facilities and directs proceeds toward community initiatives. It does **not** demonstrate that every household receives free electricity. Commonweal's study is proposed; no partnership or endorsement is implied.
+The reference project supplies local facilities and directs proceeds toward community initiatives. It does **not** demonstrate that every household receives free electricity. The current reconstruction is limited to public claims and annual reported energy; no partnership or endorsement is implied.
 
 Read the [community-solar study brief](studies/community-solar/README.md) for the question, missing inputs and review gates.
 
@@ -37,6 +53,11 @@ Read the [community-solar study brief](studies/community-solar/README.md) for th
 
 | Document | Purpose |
 | --- | --- |
+| [Study workspace](docs/study-workspace.md) | Create, save, reopen, adapt and back up work using normal forms |
+| [MCP bridge](docs/mcp.md) | Optional standard stdio connection for a compatible AI assistant |
+| [Prototype guide](docs/prototype.md) | Run, reproduce, inspect and understand the limits of the working software |
+| [Ōtaki evidence and gaps](studies/community-solar/evidence.md) | Source-reported results, forecasts, discrepancies and unavailable inputs |
+| [Prospective pilot](docs/pilot-plan.md) | A bounded paid research offer, acceptance criteria and unconfirmed funding routes |
 | [Mission and principles](docs/mission.md) | Comfortable living, freedom, stewardship and environmental obligations |
 | [Design brief](docs/design-brief.md) | Evidence, reproducible runs, human and AI participation, and scaling |
 | [Roadmap](ROADMAP.md) | Stages with concrete outputs and conditions for progressing |
