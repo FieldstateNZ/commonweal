@@ -1,0 +1,285 @@
+[
+  {
+    "schema_version": "commonweal.evidence.v1",
+    "id": "otaki-project-purpose",
+    "version": "2026-09-28.1",
+    "title": "Power Up Ōtaki: reported project purpose",
+    "claim": "The project organisation describes solar supplying the wastewater treatment plant and college, excess electricity exported to the grid, and proceeds directed to a community fund.",
+    "classification": "source_reported",
+    "review_status": "source_checked",
+    "source": {
+      "title": "Power Up Ōtaki",
+      "url": "https://www.energiseotaki.nz/power-up-otaki",
+      "publisher": "Energise Ōtaki",
+      "published_at": null,
+      "accessed_at": "2026-09-28",
+      "locator": "Power Up Ōtaki project description"
+    },
+    "context": {
+      "location": "Ōtaki, New Zealand",
+      "period": "Historical project description; current fund operations require separate evidence",
+      "units": "Qualitative project description",
+      "method": "Paraphrase of the organisation's public webpage; no independent operational verification"
+    },
+    "limitations": [
+      "This is not evidence of free electricity for all households.",
+      "The description does not supply a demand profile, full current financial accounts or complete project lifecycle impacts.",
+      "Current fund status must be read separately from historical project purpose."
+    ],
+    "rights": {
+      "status": "link_only",
+      "note": "Link and short attributed paraphrase only; no source data or publication relicensed."
+    }
+  },
+  {
+    "schema_version": "commonweal.evidence.v1",
+    "id": "otaki-asset-capacity",
+    "version": "2026-09-28.1",
+    "title": "Reported solar array capacities",
+    "claim": "The project owner reports 107 kWp at the wastewater site and 23 kWp at the college; these are peak capacities, not annual energy totals.",
+    "classification": "source_reported",
+    "review_status": "source_checked",
+    "source": {
+      "title": "Reported solar array capacities",
+      "url": "https://www.energiseotaki.nz/power-up-otaki",
+      "publisher": "Energise Ōtaki",
+      "published_at": null,
+      "accessed_at": "2026-09-28",
+      "locator": "Project description"
+    },
+    "context": {
+      "location": "Ōtaki, New Zealand",
+      "period": "Historical asset description",
+      "units": "kWp",
+      "method": "Source-checked public report or webpage; factual extraction, not independent reconciliation to meters or accounts."
+    },
+    "limitations": [
+      "A participant account describes 106.8 kWp for the wastewater array; source precision differs.",
+      "Capacity alone cannot establish annual generation or household benefits."
+    ],
+    "rights": {
+      "status": "link_only",
+      "note": "Short attributed factual extract and source link. No report layout, raw dataset or third-party model copied; open-data redistribution licence not established."
+    }
+  },
+  {
+    "schema_version": "commonweal.evidence.v1",
+    "id": "otaki-funding-forecast",
+    "version": "2026-09-28.1",
+    "title": "Combined grant and forecast income",
+    "claim": "The contractor announced a NZD 407,000 grant for the combined project and projected NZD 25,000–30,000 annual income before operation.",
+    "classification": "source_reported_forecast",
+    "review_status": "source_checked",
+    "source": {
+      "title": "Combined grant and forecast income",
+      "url": "https://infratec.co.nz/news/infratec-to-deliver-ground-breaking-community-energy-project/",
+      "publisher": "Infratec",
+      "published_at": "2020-05-01",
+      "accessed_at": "2026-09-28",
+      "locator": "Contract announcement"
+    },
+    "context": {
+      "location": "Ōtaki, New Zealand",
+      "period": "Pre-operation forecast, 2020",
+      "units": "NZD; NZD/year",
+      "method": "Source-checked public report or webpage; factual extraction, not independent reconciliation to meters or accounts."
+    },
+    "limitations": [
+      "Grant is not a verified final capital cost or site allocation; tax basis unknown.",
+      "Income range is a forecast, not measured receipts, household savings or grants paid."
+    ],
+    "rights": {
+      "status": "link_only",
+      "note": "Short attributed factual extract and source link. No report layout, raw dataset or third-party model copied; open-data redistribution licence not established."
+    }
+  },
+  {
+    "schema_version": "commonweal.evidence.v1",
+    "id": "otaki-revenue-payback-forecast",
+    "version": "2026-09-28.1",
+    "title": "Case-study forecast, not operating accounts",
+    "claim": "The case study describes an estimated minimum NZD 23,000 annual revenue and roughly 18-year simple payback.",
+    "classification": "source_reported_forecast",
+    "review_status": "source_checked",
+    "source": {
+      "title": "Case-study forecast, not operating accounts",
+      "url": "https://www.araake.co.nz/project/community-energy-how-to-guide",
+      "publisher": "Ara Ake",
+      "published_at": null,
+      "accessed_at": "2026-09-28",
+      "locator": "Energise Ōtaki case study"
+    },
+    "context": {
+      "location": "Ōtaki, New Zealand",
+      "period": "Historical case study; undated",
+      "units": "NZD/year; years",
+      "method": "Source-checked public report or webpage; factual extraction, not independent reconciliation to meters or accounts."
+    },
+    "limitations": [
+      "Gross/net and tax boundaries are insufficient for a validated payback.",
+      "No audited annual solar account or continuing grant-distribution amount is established."
+    ],
+    "rights": {
+      "status": "link_only",
+      "note": "Short attributed factual extract and source link. No report layout, raw dataset or third-party model copied; open-data redistribution licence not established."
+    }
+  },
+  {
+    "schema_version": "commonweal.evidence.v1",
+    "id": "otaki-commissioning-conflict",
+    "version": "2026-09-28.1",
+    "title": "Commissioning dates need reconciliation",
+    "claim": "KCDC reports September 2020 commissioning at the wastewater site; the Ara Ake participant account describes October 2020 for both sites and also refers to operation in 2021.",
+    "classification": "source_reported",
+    "review_status": "source_checked",
+    "source": {
+      "title": "Commissioning dates need reconciliation",
+      "url": "https://www.araake.co.nz/project/community-energy-how-to-guide",
+      "publisher": "Ara Ake",
+      "published_at": null,
+      "accessed_at": "2026-09-28",
+      "locator": "Energise Ōtaki case study; compare KCDC FY2023/24 p12"
+    },
+    "context": {
+      "location": "Ōtaki, New Zealand",
+      "period": "2020–2021 documentary accounts",
+      "units": "Month/year precision",
+      "method": "Source-checked public report or webpage; factual extraction, not independent reconciliation to meters or accounts."
+    },
+    "limitations": [
+      "Opening, site commissioning and start of operation may differ; no exact commissioning day selected.",
+      "KCDC comparison source is linked by the otaki-energy-2023-24 record."
+    ],
+    "rights": {
+      "status": "link_only",
+      "note": "Short attributed factual extract and source link. No report layout, raw dataset or third-party model copied; open-data redistribution licence not established."
+    }
+  },
+  {
+    "schema_version": "commonweal.evidence.v1",
+    "id": "otaki-energy-2020-21",
+    "version": "2026-09-28.1",
+    "title": "Reported partial-year energy",
+    "claim": "The council annual-report summary reports 80,246 kWh for September 2020–June 2021 and a rounded comparison to typical plant use.",
+    "classification": "source_reported_observation",
+    "review_status": "source_checked",
+    "source": {
+      "title": "Reported partial-year energy",
+      "url": "https://www.kapiticoast.govt.nz/media/2a3kl3qj/annual-report-2020-21-summary.pdf",
+      "publisher": "Kāpiti Coast District Council",
+      "published_at": "2021-11-25",
+      "accessed_at": "2026-09-28",
+      "locator": "Printed p7 (PDF page 9)"
+    },
+    "context": {
+      "location": "Ōtaki, New Zealand",
+      "period": "September 2020–30 June 2021",
+      "units": "kWh over reported partial period",
+      "method": "Source-checked public report or webpage; factual extraction, not independent reconciliation to meters or accounts."
+    },
+    "limitations": [
+      "Do not annualise or infer exact plant demand from the rounded comparison.",
+      "Onsite solar use is not separately resolved for the benchmark; it remains null."
+    ],
+    "rights": {
+      "status": "link_only",
+      "note": "Short attributed factual extract and source link. No report layout, raw dataset or third-party model copied; open-data redistribution licence not established."
+    }
+  },
+  {
+    "schema_version": "commonweal.evidence.v1",
+    "id": "otaki-energy-2023-24",
+    "version": "2026-09-28.1",
+    "title": "Reported annual energy, FY2023/24",
+    "claim": "The council reports 142,193.71 kWh generated and 98,841.52 kWh used at the wastewater treatment plant.",
+    "classification": "source_reported_observation",
+    "review_status": "source_checked",
+    "source": {
+      "title": "Reported annual energy, FY2023/24",
+      "url": "https://www.kapiticoast.govt.nz/media/jgqe3vkb/toit%C5%AB-carbon-reduce-ghg-emissions-inventory-report-2023-24.pdf",
+      "publisher": "Kāpiti Coast District Council",
+      "published_at": "2024-12-18",
+      "accessed_at": "2026-09-28",
+      "locator": "pp12–13; solar-energy supply agreement paragraph"
+    },
+    "context": {
+      "location": "Ōtaki, New Zealand",
+      "period": "1 July 2023–30 June 2024",
+      "units": "kWh over reporting year",
+      "method": "Source-checked public report or webpage; factual extraction, not independent reconciliation to meters or accounts."
+    },
+    "limitations": [
+      "Report says a previous generation/grid-import calculation error was resolved.",
+      "Raw meters and intervals have not been independently reconciled.",
+      "Generation less onsite consumption is a derived residual, not a measured export series."
+    ],
+    "rights": {
+      "status": "link_only",
+      "note": "Short attributed factual extract and source link. No report layout, raw dataset or third-party model copied; open-data redistribution licence not established."
+    }
+  },
+  {
+    "schema_version": "commonweal.evidence.v1",
+    "id": "otaki-energy-2024-25",
+    "version": "2026-09-28.1",
+    "title": "Reported annual energy with estimated months, FY2024/25",
+    "claim": "The council reports 138,252.58 kWh generated and 95,886.20 kWh used onsite; April and May 2025 production data were estimated after a meter malfunction.",
+    "classification": "source_reported_observation",
+    "review_status": "source_checked",
+    "source": {
+      "title": "Reported annual energy with estimated months, FY2024/25",
+      "url": "https://www.kapiticoast.govt.nz/media/oc3a3gzf/toit%C5%AB-carbon-reduce-ghg-emissions-inventory-report-2024_25.pdf",
+      "publisher": "Kāpiti Coast District Council",
+      "published_at": "2025-11-24",
+      "accessed_at": "2026-09-28",
+      "locator": "p13; solar-energy supply agreement paragraph"
+    },
+    "context": {
+      "location": "Ōtaki, New Zealand",
+      "period": "1 July 2024–30 June 2025",
+      "units": "kWh over reporting year",
+      "method": "Source-checked public report or webpage; factual extraction, not independent reconciliation to meters or accounts."
+    },
+    "limitations": [
+      "Includes estimated production for April and May 2025; source explicitly urges caution.",
+      "Not a wholly measured annual series or an independent model validation dataset.",
+      "Raw meters, financial outcomes and household savings not established."
+    ],
+    "rights": {
+      "status": "link_only",
+      "note": "Short attributed factual extract and source link. No report layout, raw dataset or third-party model copied; open-data redistribution licence not established."
+    }
+  },
+  {
+    "schema_version": "commonweal.evidence.v1",
+    "id": "otaki-fund-2026-pause",
+    "version": "2026-09-28.1",
+    "title": "Community fund paused in 2026",
+    "claim": "The project owner's live fund page states that the Whakahiko Fund is on hold in 2026.",
+    "classification": "source_reported",
+    "review_status": "source_checked",
+    "source": {
+      "title": "Community fund paused in 2026",
+      "url": "https://www.energiseotaki.nz/whakahiko-fund",
+      "publisher": "Energise Ōtaki",
+      "published_at": null,
+      "accessed_at": "2026-09-28",
+      "locator": "FAQ: what is happening with the fund this year?"
+    },
+    "context": {
+      "location": "Ōtaki, New Zealand",
+      "period": "2026 status as accessed 28 September 2026",
+      "units": "Qualitative status",
+      "method": "Source-checked public report or webpage; factual extraction, not independent reconciliation to meters or accounts."
+    },
+    "limitations": [
+      "Same page retains an older 2025 pause reference.",
+      "Reason for pause is not established; do not infer insolvency, generation failure or zero funds.",
+      "Historical project-purpose text is not proof of current distributions."
+    ],
+    "rights": {
+      "status": "link_only",
+      "note": "Short attributed factual extract and source link. No report layout, raw dataset or third-party model copied; open-data redistribution licence not established."
+    }
+  }
+]

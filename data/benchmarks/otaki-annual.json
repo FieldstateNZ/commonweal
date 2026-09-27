@@ -1,0 +1,29 @@
+[
+  {
+    "id": "otaki-wwtp-2020-21",
+    "period_start": "2020-09",
+    "period_end": "2021-06-30",
+    "generation_kwh_reported": 80246,
+    "onsite_solar_kwh_reported": null,
+    "evidence_id": "otaki-energy-2020-21",
+    "quality_note": "Partial-year total; do not annualise. Exact onsite-use boundary unresolved."
+  },
+  {
+    "id": "otaki-wwtp-2023-24",
+    "period_start": "2023-07-01",
+    "period_end": "2024-06-30",
+    "generation_kwh_reported": 142193.71,
+    "onsite_solar_kwh_reported": 98841.52,
+    "evidence_id": "otaki-energy-2023-24",
+    "quality_note": "Reported annual totals. Source states a previous calculation error was corrected; raw records not reconciled here."
+  },
+  {
+    "id": "otaki-wwtp-2024-25",
+    "period_start": "2024-07-01",
+    "period_end": "2025-06-30",
+    "generation_kwh_reported": 138252.58,
+    "onsite_solar_kwh_reported": 95886.2,
+    "evidence_id": "otaki-energy-2024-25",
+    "quality_note": "Includes estimated production for April and May 2025 after a meter malfunction; use with caution."
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "name": "commonweal",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Local evidence and scenario workbench for public-interest community research",
+  "engines": {
+    "node": ">=20.11"
+  },
+  "scripts": {
+    "start": "node src/server.mjs",
+    "test": "node --test",
+    "cli": "node src/cli.mjs"
+  },
+  "license": "Apache-2.0"
+}

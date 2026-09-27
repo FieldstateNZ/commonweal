@@ -1,6 +1,6 @@
-# First proposed study: adapting community solar
+# First study: adapting community solar
 
-Status: study brief only, 28 September 2026. No Commonweal model, reconstruction, partner agreement or pilot is complete.
+Status: bounded public reconstruction and illustrative software prototype, 28 September 2026. The [evidence account](evidence.md) records public annual totals and gaps. The [annual model](../../docs/prototype.md) uses invented examples; no partner agreement, validated local adaptation or practical pilot is complete.
 
 ## Question
 
@@ -14,7 +14,7 @@ Energise Ōtaki reports that its Power Up Ōtaki solar installations supply the 
 
 The source is an account by the project organisation, not an independently verified dataset. We have not established its full current costs, contracts, generation history or distribution of benefits. Publishing a reconstruction would not imply endorsement or partnership with Energise Ōtaki or any named organisation.
 
-## Proposed work
+## Work and next steps
 
 1. Create a case record and evidence register from appropriately licensed public sources.
 2. Identify missing inputs and distinguish historical figures from current quotes.
@@ -38,7 +38,7 @@ The contribution would be an editable, sourced model and delivery record. Existi
 | Environment | Lifecycle emissions, power, water, materials, waste, land and ecosystems |
 | AI and computation | Research/design role, verification, compute budget and resource-accounting gaps |
 
-Do not insert unsupported costs, generation or returns. Values must carry source dates, units, currency/price year and uncertainty.
+Do not present unsupported costs, generation or returns as project evidence. Invented software demonstration inputs must remain explicitly illustrative and separate from reported data. Values must carry source dates, units, currency/price year and uncertainty.
 
 ## Local adaptation and wider effects
 

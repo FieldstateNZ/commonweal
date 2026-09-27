@@ -1,0 +1,353 @@
+[
+  {
+    "schema_version": "commonweal.scenario.v1",
+    "id": "no-project",
+    "title": "Illustrative baseline: no solar",
+    "location": "Illustrative community in New Zealand — not Ōtaki",
+    "price_year": 2026,
+    "status": "illustrative",
+    "assumptions": [
+      "All numerical inputs are invented for exercising the software; none is an observed Ōtaki input, a quote or a forecast.",
+      "Onsite-use fraction is an annual assumption about generated electricity; it is not derived from interval load or weather.",
+      "Surplus shares are a proposed distribution after operating costs; capital, financing, replacement and tax remain outside this calculation.",
+      "Storage is not modelled. Imports and exports are annual balances and do not establish supply timing or reliability."
+    ],
+    "unknowns": [
+      "Actual local demand, generation profile, network approval and export constraints",
+      "Validated costs, finance, ownership and benefit-delivery agreements",
+      "Embodied, compute and water impacts; ecosystem effects; marginal displaced generation"
+    ],
+    "inputs": {
+      "capacity_kwp": {
+        "value": 0,
+        "unit": "kWp",
+        "basis": "illustrative_assumption",
+        "evidence_ids": []
+      },
+      "annual_yield_kwh_per_kwp": {
+        "value": 1100,
+        "unit": "kWh/kWp/year",
+        "basis": "illustrative_assumption",
+        "evidence_ids": []
+      },
+      "annual_demand_kwh": {
+        "value": 80000,
+        "unit": "kWh/year",
+        "basis": "illustrative_assumption",
+        "evidence_ids": []
+      },
+      "onsite_use_fraction": {
+        "value": 0,
+        "unit": "fraction",
+        "basis": "illustrative_assumption",
+        "evidence_ids": []
+      },
+      "capital_cost_nzd": {
+        "value": 0,
+        "unit": "NZD",
+        "basis": "illustrative_assumption",
+        "evidence_ids": []
+      },
+      "annual_operating_cost_nzd": {
+        "value": 0,
+        "unit": "NZD/year",
+        "basis": "illustrative_assumption",
+        "evidence_ids": []
+      },
+      "import_price_nzd_per_kwh": {
+        "value": 0.25,
+        "unit": "NZD/kWh",
+        "basis": "illustrative_assumption",
+        "evidence_ids": []
+      },
+      "export_price_nzd_per_kwh": {
+        "value": 0.08,
+        "unit": "NZD/kWh",
+        "basis": "illustrative_assumption",
+        "evidence_ids": []
+      },
+      "renter_share": {
+        "value": 0.4,
+        "unit": "fraction",
+        "basis": "illustrative_assumption",
+        "evidence_ids": []
+      },
+      "other_household_share": {
+        "value": 0.2,
+        "unit": "fraction",
+        "basis": "illustrative_assumption",
+        "evidence_ids": []
+      },
+      "community_share": {
+        "value": 0.4,
+        "unit": "fraction",
+        "basis": "illustrative_assumption",
+        "evidence_ids": []
+      },
+      "displaced_grid_kgco2e_per_kwh": {
+        "value": null,
+        "unit": "kgCO2e/kWh",
+        "basis": "unknown",
+        "evidence_ids": []
+      },
+      "embodied_kgco2e": {
+        "value": null,
+        "unit": "kgCO2e",
+        "basis": "unknown",
+        "evidence_ids": []
+      },
+      "annual_compute_kwh": {
+        "value": null,
+        "unit": "kWh/year",
+        "basis": "unknown",
+        "evidence_ids": []
+      },
+      "annual_compute_kgco2e": {
+        "value": null,
+        "unit": "kgCO2e/year",
+        "basis": "unknown",
+        "evidence_ids": []
+      },
+      "annual_water_litres": {
+        "value": null,
+        "unit": "L/year",
+        "basis": "unknown",
+        "evidence_ids": []
+      }
+    }
+  },
+  {
+    "schema_version": "commonweal.scenario.v1",
+    "id": "small-project",
+    "title": "Illustrative option: 30 kWp",
+    "location": "Illustrative community in New Zealand — not Ōtaki",
+    "price_year": 2026,
+    "status": "illustrative",
+    "assumptions": [
+      "All numerical inputs are invented for exercising the software; none is an observed Ōtaki input, a quote or a forecast.",
+      "Onsite-use fraction is an annual assumption about generated electricity; it is not derived from interval load or weather.",
+      "Surplus shares are a proposed distribution after operating costs; capital, financing, replacement and tax remain outside this calculation.",
+      "Storage is not modelled. Imports and exports are annual balances and do not establish supply timing or reliability."
+    ],
+    "unknowns": [
+      "Actual local demand, generation profile, network approval and export constraints",
+      "Validated costs, finance, ownership and benefit-delivery agreements",
+      "Embodied, compute and water impacts; ecosystem effects; marginal displaced generation"
+    ],
+    "inputs": {
+      "capacity_kwp": {
+        "value": 30,
+        "unit": "kWp",
+        "basis": "illustrative_assumption",
+        "evidence_ids": []
+      },
+      "annual_yield_kwh_per_kwp": {
+        "value": 1100,
+        "unit": "kWh/kWp/year",
+        "basis": "illustrative_assumption",
+        "evidence_ids": []
+      },
+      "annual_demand_kwh": {
+        "value": 80000,
+        "unit": "kWh/year",
+        "basis": "illustrative_assumption",
+        "evidence_ids": []
+      },
+      "onsite_use_fraction": {
+        "value": 0.75,
+        "unit": "fraction",
+        "basis": "illustrative_assumption",
+        "evidence_ids": []
+      },
+      "capital_cost_nzd": {
+        "value": 65000,
+        "unit": "NZD",
+        "basis": "illustrative_assumption",
+        "evidence_ids": []
+      },
+      "annual_operating_cost_nzd": {
+        "value": 1200,
+        "unit": "NZD/year",
+        "basis": "illustrative_assumption",
+        "evidence_ids": []
+      },
+      "import_price_nzd_per_kwh": {
+        "value": 0.25,
+        "unit": "NZD/kWh",
+        "basis": "illustrative_assumption",
+        "evidence_ids": []
+      },
+      "export_price_nzd_per_kwh": {
+        "value": 0.08,
+        "unit": "NZD/kWh",
+        "basis": "illustrative_assumption",
+        "evidence_ids": []
+      },
+      "renter_share": {
+        "value": 0.4,
+        "unit": "fraction",
+        "basis": "illustrative_assumption",
+        "evidence_ids": []
+      },
+      "other_household_share": {
+        "value": 0.2,
+        "unit": "fraction",
+        "basis": "illustrative_assumption",
+        "evidence_ids": []
+      },
+      "community_share": {
+        "value": 0.4,
+        "unit": "fraction",
+        "basis": "illustrative_assumption",
+        "evidence_ids": []
+      },
+      "displaced_grid_kgco2e_per_kwh": {
+        "value": null,
+        "unit": "kgCO2e/kWh",
+        "basis": "unknown",
+        "evidence_ids": []
+      },
+      "embodied_kgco2e": {
+        "value": null,
+        "unit": "kgCO2e",
+        "basis": "unknown",
+        "evidence_ids": []
+      },
+      "annual_compute_kwh": {
+        "value": null,
+        "unit": "kWh/year",
+        "basis": "unknown",
+        "evidence_ids": []
+      },
+      "annual_compute_kgco2e": {
+        "value": null,
+        "unit": "kgCO2e/year",
+        "basis": "unknown",
+        "evidence_ids": []
+      },
+      "annual_water_litres": {
+        "value": null,
+        "unit": "L/year",
+        "basis": "unknown",
+        "evidence_ids": []
+      }
+    }
+  },
+  {
+    "schema_version": "commonweal.scenario.v1",
+    "id": "larger-project",
+    "title": "Illustrative option: 60 kWp",
+    "location": "Illustrative community in New Zealand — not Ōtaki",
+    "price_year": 2026,
+    "status": "illustrative",
+    "assumptions": [
+      "All numerical inputs are invented for exercising the software; none is an observed Ōtaki input, a quote or a forecast.",
+      "Onsite-use fraction is an annual assumption about generated electricity; it is not derived from interval load or weather.",
+      "Surplus shares are a proposed distribution after operating costs; capital, financing, replacement and tax remain outside this calculation.",
+      "Storage is not modelled. Imports and exports are annual balances and do not establish supply timing or reliability."
+    ],
+    "unknowns": [
+      "Actual local demand, generation profile, network approval and export constraints",
+      "Validated costs, finance, ownership and benefit-delivery agreements",
+      "Embodied, compute and water impacts; ecosystem effects; marginal displaced generation"
+    ],
+    "inputs": {
+      "capacity_kwp": {
+        "value": 60,
+        "unit": "kWp",
+        "basis": "illustrative_assumption",
+        "evidence_ids": []
+      },
+      "annual_yield_kwh_per_kwp": {
+        "value": 1100,
+        "unit": "kWh/kWp/year",
+        "basis": "illustrative_assumption",
+        "evidence_ids": []
+      },
+      "annual_demand_kwh": {
+        "value": 80000,
+        "unit": "kWh/year",
+        "basis": "illustrative_assumption",
+        "evidence_ids": []
+      },
+      "onsite_use_fraction": {
+        "value": 0.55,
+        "unit": "fraction",
+        "basis": "illustrative_assumption",
+        "evidence_ids": []
+      },
+      "capital_cost_nzd": {
+        "value": 120000,
+        "unit": "NZD",
+        "basis": "illustrative_assumption",
+        "evidence_ids": []
+      },
+      "annual_operating_cost_nzd": {
+        "value": 1800,
+        "unit": "NZD/year",
+        "basis": "illustrative_assumption",
+        "evidence_ids": []
+      },
+      "import_price_nzd_per_kwh": {
+        "value": 0.25,
+        "unit": "NZD/kWh",
+        "basis": "illustrative_assumption",
+        "evidence_ids": []
+      },
+      "export_price_nzd_per_kwh": {
+        "value": 0.08,
+        "unit": "NZD/kWh",
+        "basis": "illustrative_assumption",
+        "evidence_ids": []
+      },
+      "renter_share": {
+        "value": 0.4,
+        "unit": "fraction",
+        "basis": "illustrative_assumption",
+        "evidence_ids": []
+      },
+      "other_household_share": {
+        "value": 0.2,
+        "unit": "fraction",
+        "basis": "illustrative_assumption",
+        "evidence_ids": []
+      },
+      "community_share": {
+        "value": 0.4,
+        "unit": "fraction",
+        "basis": "illustrative_assumption",
+        "evidence_ids": []
+      },
+      "displaced_grid_kgco2e_per_kwh": {
+        "value": null,
+        "unit": "kgCO2e/kWh",
+        "basis": "unknown",
+        "evidence_ids": []
+      },
+      "embodied_kgco2e": {
+        "value": null,
+        "unit": "kgCO2e",
+        "basis": "unknown",
+        "evidence_ids": []
+      },
+      "annual_compute_kwh": {
+        "value": null,
+        "unit": "kWh/year",
+        "basis": "unknown",
+        "evidence_ids": []
+      },
+      "annual_compute_kgco2e": {
+        "value": null,
+        "unit": "kgCO2e/year",
+        "basis": "unknown",
+        "evidence_ids": []
+      },
+      "annual_water_litres": {
+        "value": null,
+        "unit": "L/year",
+        "basis": "unknown",
+        "evidence_ids": []
+      }
+    }
+  }
+]

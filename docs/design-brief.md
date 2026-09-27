@@ -1,6 +1,6 @@
 # Design brief
 
-Status: proposed design, 28 September 2026. No engine or API is implemented in this repository.
+Status: wider design with an initial local prototype, 28 September 2026. The [prototype guide](prototype.md) describes the implemented annual model, evidence import, saved run records, comparison, CLI and API. Durable shared storage, review workflows, optimisation and pilot delivery remain proposed.
 
 ## The shared loop
 
@@ -20,7 +20,7 @@ A model states its purpose, equations or rules, dependencies, applicability, val
 
 ## Reproducible scenarios and optimisation
 
-A saved run pins the model and input versions, evidence references, assumptions, units, code and dependency versions, random seeds where relevant, execution settings and outputs. Record checksums where practical and enough instructions to repeat it. AI model/provider identifiers, prompts or suitably redacted summaries, and relevant tool outputs document AI contributions without claiming deterministic AI responses.
+The intended saved-run format should pin model and input versions, evidence references, assumptions, units, code and dependency versions, random seeds where relevant, execution settings and outputs. The initial prototype retains model identity/version, full scenario and evidence snapshots, results and a content hash; archive the repository commit and runtime separately, as described in the [prototype guide](prototype.md). Record enough instructions to repeat the work. AI model/provider identifiers, prompts or suitably redacted summaries, and relevant tool outputs document AI contributions without claiming deterministic AI responses.
 
 Separate verification of calculations from validation against real observations. Compare a baseline and alternatives, explore sensitivity and uncertainty, and record failed or infeasible runs. Deterministic replay is valuable evidence of repeatability, not proof that the model describes society.
 
@@ -39,7 +39,7 @@ An ordinary interface and structured engine actions should reach the same record
 | Compare scenarios | Visible differences in inputs, outcomes, uncertainty and coverage |
 | Contribute outcomes | Observations linked to a pilot and its original expectations |
 
-Keep these operations independently usable through APIs and appropriate connectors. They are proposed capabilities, not available endpoints.
+Keep these operations independently usable through APIs and appropriate connectors. The prototype implements a subset: evidence format checking, scenario editing, deterministic runs, comparison and export. Its [operation manifest](../src/records.mjs) describes available local endpoints. Shared permissions, a durable revision graph, resource metering and outcome contributions remain proposed.
 
 WebMCP is a possible browser adapter. Its [draft specification](https://webmachinelearning.github.io/webmcp/) and [Chrome documentation](https://developer.chrome.com/docs/ai/webmcp) describe tools exposed by web applications to compatible agents; support is evolving. It is not inference, free compute or a guarantee that every AI subscription can connect. Engine operations must remain useful without this adapter.
 

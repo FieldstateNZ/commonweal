@@ -12,3 +12,7 @@ Thumbs.db
 # Local research material requiring review before publication
 private/
 scratch/
+
+# Local runtime artifacts
+node_modules/
+*.log
